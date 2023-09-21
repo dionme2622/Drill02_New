@@ -24,11 +24,13 @@ def run_circle():
 def run_rectangle():
     print('Rectangle')
 
-    # bottom
+    # bottom line
     for x in range(50, 750+1, 5):
         render_frame(x, 90) # x, y 위치에 캐릭터 그려주는 함수
        
-    
+    # top line
+    for x in range(750, 50-1, -5):
+        render_frame(x, 550)
 
 while(True) :
     run_circle()
